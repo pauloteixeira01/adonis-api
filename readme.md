@@ -13,3 +13,35 @@
 </p>
 
 ### Hi! Here you can register important moments of your life and add commentaries to them!
+
+> [!IMPORTANT]
+> You need have node.js version >= v22.0.0
+
+## 1° Download the project and enter it:
+
+```bash
+git clone git@github.com:pauloteixeira01/adonis-api.git
+
+```
+
+```bash
+cd adonis-api
+```
+
+## 2° Download dependencies:
+
+```bash
+npm install
+```
+
+If you have some problem, run:
+
+```bash
+npm install --ignore-platform
+```
+
+## 3° Run the project:
+
+```bash
+npm run dev
+```
