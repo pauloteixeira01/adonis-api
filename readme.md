@@ -27,6 +27,9 @@ NODE_ENV=development
 
 ```
 
+> [!IMPORTANT]
+> The postman requests file is in assets, please import:
+
 ## 1° Download the project and enter it:
 
 ```bash
