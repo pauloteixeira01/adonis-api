@@ -1,0 +1,183 @@
+{
+	"info": {
+		"_postman_id": "b121b596-afa2-4ce4-b347-53c194d27fc6",
+		"name": "API-ADONIS",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "11400483"
+	},
+	"item": [
+		{
+			"name": "LIST-ALL-MOMENTS",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3333/moments/api",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3333",
+					"path": [
+						"moments",
+						"api"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "MOMENTS",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3333/moments/api/2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3333",
+					"path": [
+						"moments",
+						"api",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "REMOVE-MOMENT",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3333/moments/api/4",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3333",
+					"path": [
+						"moments",
+						"api",
+						"4"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "CREATE-MOMENT",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "title",
+							"value": "Some title",
+							"type": "text"
+						},
+						{
+							"key": "description",
+							"value": "Some description",
+							"type": "text"
+						},
+						{
+							"key": "image",
+							"type": "file",
+							"src": []
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:3333/moments/api",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3333",
+					"path": [
+						"moments",
+						"api"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "UPDATE-MOMENT",
+			"request": {
+				"method": "PATCH",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "title",
+							"value": "Some title",
+							"type": "text"
+						},
+						{
+							"key": "description",
+							"value": "some description",
+							"type": "text"
+						},
+						{
+							"key": "image",
+							"type": "file",
+							"src": []
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:3333/moments/api/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3333",
+					"path": [
+						"moments",
+						"api",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "CREATE-COMMENT",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"username\": \"Paulo\",\n    \"text\": \"TESTE\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3333/moments/2/comments",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3333",
+					"path": [
+						"moments",
+						"2",
+						"comments"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
