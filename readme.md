@@ -15,7 +15,17 @@
 ### Hi! Here you can register important moments of your life and add commentaries to them!
 
 > [!IMPORTANT]
-> You need have node.js version >= v22.0.0
+> You need have node.js version >= v22.0.0 and create file .env with follow content:
+
+```bash
+TZ=UTC
+PORT=3333
+HOST=localhost
+LOG_LEVEL=info
+APP_KEY=lT5miptOxZxktD-eLoCUPVWHpQh3eVAT
+NODE_ENV=development
+
+```
 
 ## 1° Download the project and enter it:
 
